@@ -115,7 +115,7 @@ export default function About() {
   },
   { 
     name: 'Brian Oduma', 
-    role: 'Head of Design', 
+    role: 'Graphics Design & Branding', 
     img: '/images/Brian Oduma.jpg' 
   },
   { 
@@ -124,9 +124,9 @@ export default function About() {
     img: '/images/Laban Oduma.jpg' 
   },
   { 
-    name: 'Emma Watson', 
-    role: 'Lead Developer', 
-    img: '/images/manager.jpg' 
+    name: 'Denis Wandera', 
+    role: 'Web Design & SEO Optimization', 
+    img: '/images/Denis Wandera.png' 
   }
             ].map((member, idx) => (
               <div key={idx} className="group relative">
