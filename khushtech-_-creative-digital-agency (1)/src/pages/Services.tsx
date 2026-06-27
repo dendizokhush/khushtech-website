@@ -29,11 +29,11 @@ const services = [
   },
   {
     icon: Smartphone,
-    title: 'App Development',
+    title: 'Web Development',
     desc: 'Native and cross-platform mobile apps that users love.',
     benefits: ['iOS & Android', 'Performance Focused', 'Cloud Ready'],
     price: 'From $4,999',
-    image: '/images/web-design.png'
+    image: '/images/web-development.jpg'
   },
   {
     icon: PenTool,
