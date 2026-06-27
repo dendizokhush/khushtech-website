@@ -2,7 +2,7 @@
 
 A modern digital agency website built to showcase professional web design, UI/UX, SEO, branding, and development services.
 
-## Features
+## 🚀 Features
 
 - Modern responsive design
 - React-based architecture
@@ -11,7 +11,7 @@ A modern digital agency website built to showcase professional web design, UI/UX
 - Contact form integration
 - SEO optimized structure
 
-## Technologies
+## 🛠 Technologies
 
 - React
 - TypeScript
