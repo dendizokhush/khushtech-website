@@ -8,42 +8,48 @@ const services = [
     title: 'Website Design',
     desc: 'Cutting-edge designs with a focus on conversions and brand identity.',
     benefits: ['Custom Layouts', 'Speed Optimized', 'Mobile First'],
-    price: 'From $1,499'
+    price: 'From $1,499',
+    image: '/images/web-design.png'
   },
   {
     icon: Layers,
     title: 'UI/UX Design',
     desc: 'Deep user research and testing for intuitive product experiences.',
     benefits: ['User Persona Research', 'Wireframing', 'Prototyping'],
-    price: 'From $1,999'
+    price: 'From $1,999',
+    image: '/images/web-design.png'
   },
   {
     icon: Database,
     title: 'E-commerce Solutions',
     desc: 'Robust online stores built on modern frameworks for scalability.',
     benefits: ['Payment Integration', 'Inventory Management', 'Safe Checkout'],
-    price: 'From $2,499'
+    price: 'From $2,499',
+    image: '/images/web-design.png'
   },
   {
     icon: Smartphone,
     title: 'App Development',
     desc: 'Native and cross-platform mobile apps that users love.',
     benefits: ['iOS & Android', 'Performance Focused', 'Cloud Ready'],
-    price: 'From $4,999'
+    price: 'From $4,999',
+    image: '/images/web-design.png'
   },
   {
     icon: PenTool,
     title: 'Full Branding',
     desc: 'Logos, color palettes, and voice that define your unique brand.',
     benefits: ['Logo Design', 'Brand Guidelines', 'Visual Assets'],
-    price: 'From $999'
+    price: 'From $999',
+    image: '/images/web-design.png'
   },
   {
     icon: Zap,
     title: 'SEO Services',
     desc: 'Dominating search results with calculated strategy and execution.',
     benefits: ['Keyword Research', 'Technical SEO', 'Backlink Strategy'],
-    price: 'From $499/mo'
+    price: 'From $499/mo',
+    image: '/images/web-design.png'
   }
 ];
 
@@ -93,10 +99,9 @@ export default function Services() {
                  <div className="relative group">
                    <div className="absolute inset-0 bg-blue-500/20 rounded-3xl blur-3xl opacity-0 group-hover:opacity-50 transition-opacity" />
                    <img 
-                    src={`https://picsum.photos/seed/service-${idx}/800/600`} 
-                    alt={service.title} 
-                    className="relative z-10 rounded-3xl shadow-2xl opacity-90 grayscale hover:grayscale-0 transition-all duration-700"
-                    referrerPolicy="no-referrer"
+                    src={service.image}
+ alt={service.title}
+ className="relative z-10 rounded-3xl shadow-2xl opacity-90 grayscale hover:grayscale-0 transition-all duration-700"
                    />
                  </div>
               </div>
