@@ -33,8 +33,8 @@ export default function About() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
             <img 
-              src="https://picsum.photos/seed/agency/800/800" 
-              alt="Office" 
+              src="/images/khush brand about us.png" 
+              alt="Khush brand about us image" 
               className="rounded-3xl shadow-2xl opacity-80"
               referrerPolicy="no-referrer"
             />
