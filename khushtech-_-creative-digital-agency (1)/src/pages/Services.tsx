@@ -25,7 +25,7 @@ const services = [
     desc: 'Robust online stores built on modern frameworks for scalability.',
     benefits: ['Payment Integration', 'Inventory Management', 'Safe Checkout'],
     price: 'From $2,499',
-    image: '/images/ecommerce-solutions.jpg'
+    image: '/images/ecommerce-solutions.png'
   },
   {
     icon: Smartphone,
