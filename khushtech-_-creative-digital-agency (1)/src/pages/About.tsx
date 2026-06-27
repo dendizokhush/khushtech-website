@@ -111,7 +111,7 @@ export default function About() {
               { 
     name: 'Denis Wandera', 
     role: 'Founder & Director', 
-    img: '/images/Denis%20Wandera.png' 
+    img: '/images/Denis Wandera.png' 
   },
   { 
     name: 'Sarah Chen', 
