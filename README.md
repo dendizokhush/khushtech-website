@@ -34,4 +34,4 @@ https://khushtech.online
 
 ## 👨‍💻 Developer
 
-KhushTech
+Denis Wandera
