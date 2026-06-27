@@ -3,10 +3,26 @@ import { motion } from 'motion/react';
 import { Mail, Phone, MapPin, Send, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 export default function Contact() {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert('Thank you for your message! Our team will contact you shortly.');
-  };
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  const form = e.currentTarget;
+
+  const response = await fetch("https://formspree.io/f/xykqwrnr", {
+    method: "POST",
+    body: new FormData(form),
+    headers: {
+      Accept: "application/json",
+    },
+  });
+
+  if (response.ok) {
+    alert("Thank you for your message! Our team will contact you shortly.");
+    form.reset();
+  } else {
+    alert("Something went wrong. Please try again.");
+  }
+};
 
   return (
     <div className="pt-24 pb-24 px-6">
@@ -89,24 +105,28 @@ export default function Contact() {
                     <label className="text-xs font-bold uppercase tracking-widest text-slate-500 ml-4">Full Name</label>
                     <input 
                       required
+                      name="name"
                       type="text" 
                       placeholder="John Doe" 
                       className="w-full px-6 py-4 bg-slate-900 border border-white/10 rounded-2xl focus:outline-none focus:border-blue-500 transition-all text-white"
-                    />
+                      />
                  </div>
                  <div className="space-y-2">
                     <label className="text-xs font-bold uppercase tracking-widest text-slate-500 ml-4">Email Address</label>
-                    <input 
-                      required
-                      type="email" 
-                      placeholder="john@example.com" 
-                      className="w-full px-6 py-4 bg-slate-900 border border-white/10 rounded-2xl focus:outline-none focus:border-blue-500 transition-all text-white"
+                    <input  
+                        required
+                        name="email"
+                        type="email" 
+                        placeholder="john@example.com" 
+                        className="w-full px-6 py-4 bg-slate-900 border border-white/10 rounded-2xl focus:outline-none focus:border-blue-500 transition-all text-white"
                     />
                  </div>
               </div>
               <div className="space-y-2">
                  <label className="text-xs font-bold uppercase tracking-widest text-slate-500 ml-4">Subject</label>
-                 <select className="w-full px-6 py-4 bg-slate-900 border border-white/10 rounded-2xl focus:outline-none focus:border-blue-500 transition-all text-white appearance-none">
+                 <select 
+                    name="service"
+                    className="w-full px-6 py-4 bg-slate-900 border border-white/10 rounded-2xl focus:outline-none focus:border-blue-500 transition-all text-white appearance-none">
                     <option>Website Design</option>
                     <option>UI/UX Project</option>
                     <option>Mobile App Development</option>
@@ -118,6 +138,7 @@ export default function Contact() {
                  <label className="text-xs font-bold uppercase tracking-widest text-slate-500 ml-4">Message</label>
                  <textarea 
                    required
+                   name="message"
                    rows={5}
                    placeholder="Tell us about your project..." 
                    className="w-full px-6 py-4 bg-slate-900 border border-white/10 rounded-2xl focus:outline-none focus:border-blue-500 transition-all text-white resize-none"
