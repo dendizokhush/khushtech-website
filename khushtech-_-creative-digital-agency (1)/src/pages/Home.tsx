@@ -94,8 +94,8 @@ export default function Home() {
           >
             <div className="relative z-10 p-4 rounded-2xl glass border border-white/10 shadow-2xl backdrop-blur-xl">
                <img 
-                 src="https://picsum.photos/seed/tech/800/600" 
-                 alt="Digital Product Mockup" 
+                 src="/images/khush brand hero image.png" 
+                 alt="Khush brand hero image" 
                  className="rounded-xl w-full h-auto opacity-90"
                  referrerPolicy="no-referrer"
                />
